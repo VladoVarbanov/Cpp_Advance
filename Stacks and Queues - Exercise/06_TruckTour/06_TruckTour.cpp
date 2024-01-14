@@ -21,7 +21,7 @@ bool checkIndex(queue<int> pumpAmount, queue<int> pumpDist, int index)
 	while (!pumpAmount.empty())
 	{
 		truck += a;
-		if (truck > d)
+		if (truck >= d)
 		{
 			truck -= d;
 			pumpAmount.pop();
