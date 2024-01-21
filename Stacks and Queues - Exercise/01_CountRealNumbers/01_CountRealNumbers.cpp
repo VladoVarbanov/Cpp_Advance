@@ -2,7 +2,7 @@
 #include <sstream>
 #include <string>
 #include <map>
-
+#include <xlocmon>
 
 
 int main()
@@ -16,7 +16,8 @@ int main()
 	{
 		data[i]++;
 	}
-	for (auto value : data)
+
+	for (const std::pair<const double, const int> value : data)
 	{
 		std::cout << value.first << " -> " << value.second << std::endl;
 	}
