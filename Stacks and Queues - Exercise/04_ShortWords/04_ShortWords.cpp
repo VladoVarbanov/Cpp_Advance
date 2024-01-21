@@ -16,7 +16,7 @@ int main()
 {
 	string buffer;
 	getline(cin, buffer);
-	transform(buffer.cbegin(), buffer.cend(), buffer.begin(), to_lower);
+	transform(buffer.cbegin(), buffer.cend(), buffer.begin(), tolower);
 	stringstream ss(buffer);
 	string word;
 	set<string> orderList;
